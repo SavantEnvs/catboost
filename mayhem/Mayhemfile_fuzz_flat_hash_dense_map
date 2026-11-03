@@ -1,0 +1,8 @@
+project: savantenvs/catboost
+target: fuzz_flat_hash_dense_map
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_flat_hash_dense_map/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_flat_hash_dense_map
+    libfuzzer: true
