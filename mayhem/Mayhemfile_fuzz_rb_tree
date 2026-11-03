@@ -1,0 +1,8 @@
+project: savantenvs/catboost
+target: fuzz_rb_tree
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rb_tree/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rb_tree
+    libfuzzer: true

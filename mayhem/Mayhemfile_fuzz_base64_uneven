@@ -1,0 +1,8 @@
+project: savantenvs/catboost
+target: fuzz_base64_uneven
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_base64_uneven/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_base64_uneven
+    libfuzzer: true

@@ -1,0 +1,5 @@
+POST /x?y=1 HTTP/1.1
+Host: a
+Content-Encoding: gzip
+Content-Length: 0
+

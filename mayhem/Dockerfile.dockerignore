@@ -1,0 +1,4 @@
+# Generated build output only; .git and the sources stay in the context (the image bakes the full repo).
+mayhem/build-cmake/
+mayhem/build-test/
+mayhem/build-lz4/
